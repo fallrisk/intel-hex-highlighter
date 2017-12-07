@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>hex</string>
+		<string>intel-hex</string>
+	</array>
+	<key>name</key>
+	<string>Intel Hex</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.intelhex</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.label.intelhex</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.intelhex</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>comment.intelhex</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Intel Hex Record, &lt;number of bytes&gt; &lt;address&gt; &lt;record type&gt; &lt;checksum&gt;</string>
+			<key>match</key>
+			<string>^:([A-Za-z0-9]{2})([A-Za-z0-9]{4})([A-Za-z0-9]{2}).*([A-Za-z0-9]{2})$</string>
+			<key>name</key>
+			<string>intelhex</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.intelhex</string>
+	<key>uuid</key>
+	<string>bc72438e-e582-48b3-8c50-a4cf08e64144</string>
+</dict>
+</plist>
